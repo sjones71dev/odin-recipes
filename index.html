@@ -2,23 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
     <title>Odin Recipe's</title>
 </head>
 
 <body>
-    <h1>Odin Recipe's</h1>
-
-    <ul>
-        <li>
-            <a href="/recipes/lasagna.html">Lasagna</a>
-        </li>
-        <li>
-            <a href="/recipes/tex-mex-burger.html">Tex-Mex Burgers</a>
-        </li>
-        <li>
-            <a href="/recipes/chicken-korma.html">Chicken Korma</a>
-        </li>
-    </ul>
-
+    <div class="container">
+        <nav>
+            <div class="brand">
+                <img src="/images/odin.png" alt="logo">
+                <span>Odin Recipe's</span>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="/index.html">
+                        <svg class="menu_icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M3 13h1v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7h1a1 1 0 0 0 .707-1.707l-9-9a.999.999 0 0 0-1.414 0l-9 9A1 1 0 0 0 3 13zm7 
+                                    7v-5h4v5h-4zm2-15.586 6 6V15l.001 5H16v-5c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v5H6v-9.586l6-6z">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    
+        <main>
+            <div class="banner">
+                <img class="odin" src="/images/odin.png" alt="logo">
+                <h1>Odin Recipe's</h1>
+                <span>Food Fit For Gods!!</span>
+            </div>
+            
+            <h2>Current Recipes</h2>
+            <ul class="recipes">
+                <li>
+                    <a href="/recipes/lasagna.html">
+                        <img src="/recipes/images/lasagna.jpg" alt="Lasagna">
+                        <p>Lasagne</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/recipes/tex-mex-burger.html">
+                        <img src="/recipes/images/tex-mex-burger.jpg" alt="Burger">
+                        <p>Tex-Mex Burgers</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/recipes/chicken-korma.html">
+                        <img src="/recipes/images/chicken-korma.jpg" alt="Korma">
+                        <p>Chicken Korma</p>
+                    </a>
+                </li>
+            </ul>
+        </main>
+        
+        <footer>
+            &copy; Steven Jones
+        </footer>
+    
+    </div>
 </body>
 </html>

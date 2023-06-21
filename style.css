@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Comforter&display=swap');
+
+/* :root{
+
+} */
+
+a, a:visited, a:active{
+    color: currentColor;
+    text-decoration: none;
+    text-align: left;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    color: rgb(102,102,102);
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+body{
+    background-color: rgb(223,221,216);
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.container{
+    background-color: white;
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* NAVIGATION */
+
+nav{
+    display: flex;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(222,222,222);
+}
+
+nav .brand{
+    margin-right: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.brand img,
+img.odin{
+    border: 1px solid rgba(222,222,222);
+    height: 45px;
+    width: 45px;
+    padding: 3px;
+    border-radius: 50%;
+    margin: 5px;
+    display: inline;
+}
+img.odin{
+    padding: 0;
+    border: 3px solid white;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+}
+.brand span{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    font-weight: 300;
+    font-size: 24px;
+}
+nav .menu{
+    margin-right: 50px;
+    font-size: 32px;
+    display: flex;
+    flex-direction: row;
+}
+nav .menu li{
+    
+    margin: auto;
+    height: 36px;
+    width: 36px;
+    display: flex;
+}
+nav .menu li a{
+    margin: auto;
+    color: currentColor;
+    
+}
+.menu_icon{
+    transition: fill linear 0.2s;
+    fill: currentColor;
+}
+
+
+main, footer {
+    margin: auto 125px;
+}
+
+/* BANNER */
+
+.banner{
+    width: 800px;
+    margin: 10px auto;
+    height: 200px;
+    background: url(/images/bg.jpg) no-repeat, rgba(0,0,0,0.4);
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 50px;
+}
+.banner h1,
+.banner span{
+    color: white;
+    font-family: 'Comforter', cursive;
+    margin: 0 auto;
+    font-size: 42px;
+}
+.banner h1{
+    font-size: 100px;
+}
+
+/* MAIN */
+
+h2{
+    
+    text-align: center;
+}
+
+.recipes{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 20px 50px
+}
+.recipes li{
+    list-style: none;
+    width: 240px;
+    margin: 0 auto;
+    font-size: 18px;
+    padding: 4px;
+    border: 1px solid currentColor;
+    opacity: 0.8;
+    transition: opacity linear 0.2s, color linear 0.2s;
+    color: currentColor;
+}
+
+.recipes li img{
+    width: 100%;
+}
+.recipes li p{
+    color: currentColor;
+    font-weight: 400;
+}
+
+/* FOOTER */
+
+footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0.8;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TRANSITIONS */
+
+.recipes li:hover{
+    opacity: 1;
+    color: rgb(84, 158, 228);
+}
+
+a:hover > .menu_icon{
+    fill: rgb(84, 158, 228)
+}
