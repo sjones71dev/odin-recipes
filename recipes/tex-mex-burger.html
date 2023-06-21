@@ -1,58 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odin's Recipe's - Tex-Mex Burger</title>
-</head>
-<body>
-    <h1>Tex-Mex Burger Recipe</h1>
-    <img src="/recipes/images/tex-mex-burger.jpg" alt="Image of Burger">
-    <h2>Description</h2>
-    <p>
-        Loaded with flavour, these Tex-Mex burgers are sure to level up your barbecue game this summer.  
-        Top your burger patty with a homemade chilli cheese sauce and pickled jalapeño slaw.  This is a burger that's sure to impress.
-    </p>
-    <h2>Ingredients</h2>
-    <ul>
-        <li>300g crunchy coleslaw kit</li>
-        <li>2 tbsp lighter than light mayonnaise</li>
-        <li>100g sliced green jalapeños in brine, drained</li>
-        <li>½ x 30g pack coriander, finely chopped</li>
-        <li>½ lime, juiced</li>
-        <li>454g pack 4 quarter pounder burgers</li>
-        <li>1 tbsp vegetable oil</li>
-        <li>4 large seeded burger buns, sliced in half</li>
-        <li>4 tbsp tomato ketchup</li>
-        <li>1 large vine tomato, sliced</li>
-    </ul>
-    <h3>For the chilli cheese sauce</h3>
-    <ul>
-        <li>15g unsalted butter</li>
-        <li>15g plain flour</li>
-        <li>1 tbsp fajita seasoning</li>
-        <li>200ml semi-skimmed milk</li>
-        <li>60g chilli cheese mix</li>
-    </ul>
-    <h2>Steps</h2>
-    <ol>
-        <li>
-            First, make the cheese sauce. Melt the butter in a saucepan over a medium heat. Add the flour and fajita seasoning and stir to combine. 
-            Gradually add the milk, whisking until smooth and thickened. Remove from the heat and stir through the chilli cheese mix. Tightly cover 
-            with a sheet of baking paper so that it is touching the sauce (to prevent a skin from forming) and set aside to cool slightly.
-        </li>
-        <li>
-            Mix the coleslaw kit, mayonnaise, 5 finely chopped jalapeños, the coriander and lime juice together until evenly combined. Set aside.
-        </li>
-        <li>
-            Heat a griddle pan or barbecue until hot. Brush both sides of the burgers with the oil and cook for 6-8 mins each side until cooked through. 
-            Transfer to a plate, cover with foil and leave to rest for 5 mins. Lightly toast the burger buns on the griddle or barbecue.
-        </li>
-        <li>
-            Smooth ketchup onto the base of the burger buns and top with the coleslaw, a slice of tomato and the burger. Spoon over the cheese sauce and 
-            top with the remaining jalapeños and lid. Serve with any remaining coleslaw on the side.
-        </li>
-    </ol>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="../style.css">
+        <title>Odin's Recipe's - Tex-Mex Burger</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <nav>
+                <div class="brand">
+                    <img src="/images/odin.png" alt="logo">
+                    <span>Odin Recipe's</span>
+                </div>
+                <ul class="menu">
+                    <li>
+                        <a href="/index.html">
+                            <svg class="menu_icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M3 13h1v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7h1a1 1 0 0 0 .707-1.707l-9-9a.999.999 0 0 0-1.414 0l-9 9A1 1 0 0 0 3 13zm7 
+                                        7v-5h4v5h-4zm2-15.586 6 6V15l.001 5H16v-5c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v5H6v-9.586l6-6z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <main>
+                <h1>Tex-Mex Burger Recipe</h1>
+                <section class="recipe_description">
+                    <img src="/recipes/images/tex-mex-burger.jpg" alt="Image of Burger">
+
+                    <div class="detail">
+                        <h2>Description</h2>
+                        <p>
+                            Loaded with flavour, these Tex-Mex burgers are sure to level up your barbecue game this summer.  
+                            Top your burger patty with a homemade chilli cheese sauce and pickled jalapeño slaw.  This is a burger that's sure to impress.
+                        </p>
+                        <ul class="stats">
+                            <li>
+                                <i class='bx bx-group'></i>
+                                <span>Serves 4</span>
+                            </li>
+                            <li>    
+                                <i class='bx bx-time-five'></i>
+                                <span>15 mins to prepare and 25 mins to cook</span>
+                            </li>
+                            <li>
+                                <i class='bx bx-calculator' ></i>
+                                <span>730 calories / serving</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="recipe_ingredients">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>300g crunchy coleslaw kit</li>
+                        <li>2 tbsp lighter than light mayonnaise</li>
+                        <li>100g sliced green jalapeños in brine, drained</li>
+                        <li>½ x 30g pack coriander, finely chopped</li>
+                        <li>½ lime, juiced</li>
+                        <li>454g pack 4 quarter pounder burgers</li>
+                        <li>1 tbsp vegetable oil</li>
+                        <li>4 large seeded burger buns, sliced in half</li>
+                        <li>4 tbsp tomato ketchup</li>
+                        <li>1 large vine tomato, sliced</li>
+                    </ul>
+                    <h3>For the chilli cheese sauce</h3>
+                    <ul>
+                        <li>15g unsalted butter</li>
+                        <li>15g plain flour</li>
+                        <li>1 tbsp fajita seasoning</li>
+                        <li>200ml semi-skimmed milk</li>
+                        <li>60g chilli cheese mix</li>
+                    </ul>
+                </section>
+                
+                <section class="recipe_steps">
+                    <h2>Steps</h2>
+                    <ol>
+                        <li>
+                            First, make the cheese sauce. Melt the butter in a saucepan over a medium heat. Add the flour and fajita seasoning and stir to combine. 
+                            Gradually add the milk, whisking until smooth and thickened. Remove from the heat and stir through the chilli cheese mix. Tightly cover 
+                            with a sheet of baking paper so that it is touching the sauce (to prevent a skin from forming) and set aside to cool slightly.
+                        </li>
+                        <li>
+                            Mix the coleslaw kit, mayonnaise, 5 finely chopped jalapeños, the coriander and lime juice together until evenly combined. Set aside.
+                        </li>
+                        <li>
+                            Heat a griddle pan or barbecue until hot. Brush both sides of the burgers with the oil and cook for 6-8 mins each side until cooked through. 
+                            Transfer to a plate, cover with foil and leave to rest for 5 mins. Lightly toast the burger buns on the griddle or barbecue.
+                        </li>
+                        <li>
+                            Smooth ketchup onto the base of the burger buns and top with the coleslaw, a slice of tomato and the burger. Spoon over the cheese sauce and 
+                            top with the remaining jalapeños and lid. Serve with any remaining coleslaw on the side.
+                        </li>
+                    </ol>
+                </section>
+            </main>
+
+            <footer>
+                &copy; Steven Jones
+            </footer>
+        </div>
+    </body>
 </html>

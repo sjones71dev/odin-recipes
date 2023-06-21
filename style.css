@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Comforter&display=swap');
 
-/* :root{
-
-} */
+:root{
+    --accent_color: rgb(84, 158, 228)
+}
 
 a, a:visited, a:active{
     color: currentColor;
@@ -27,10 +27,12 @@ body{
 }
 
 .container{
-    background-color: white;
+    background-color: rgb(246,246,246);
     width: 1100px;
+    min-height: 100vh;
     margin: 0 auto;
-    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 /* NAVIGATION */
@@ -39,6 +41,7 @@ nav{
     display: flex;
     background-color: transparent;
     border-bottom: 1px solid rgba(222,222,222);
+    margin-bottom: 20px;
 }
 
 nav .brand{
@@ -95,15 +98,13 @@ nav .menu li a{
 }
 
 
-main, footer {
-    margin: auto 125px;
-}
+
 
 /* BANNER */
 
 .banner{
     width: 800px;
-    margin: 10px auto;
+    margin: 20px auto;
     height: 200px;
     background: url(/images/bg.jpg) no-repeat, rgba(0,0,0,0.4);
     background-size: cover;
@@ -112,7 +113,6 @@ main, footer {
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-bottom: 50px;
 }
 .banner h1,
 .banner span{
@@ -127,9 +127,37 @@ main, footer {
 
 /* MAIN */
 
-h2{
-    
+main{
+    margin: 0 120px;
+}
+main section{
+    background-color: rgba(255,255,255,1);
+    padding: 10px 5px;
+    margin-bottom: 10px;
+}
+main h1{
+    margin-bottom: 10px;
+}
+h2.main{
     text-align: center;
+    color: var(--accent_color);
+}
+section h2{
+    text-align: left;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--accent_color);
+}
+section h3{
+    text-align: left;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 300;
+}
+section p{
+    
+    padding: 5px;
 }
 
 .recipes{
@@ -158,14 +186,43 @@ h2{
     font-weight: 400;
 }
 
+section.recipe_description{
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-weight: 300;
+}
+section.recipe_description img{
+    width: 500px;
+    padding: 10px
+}
+section.recipe_description i{
+    color: var(--accent_color);
+}
+
+section.recipe_ingredients,
+section.recipe_steps{
+    padding: 20px 40px
+}
+section.recipe_ingredients ul,
+section.recipe_steps ol{
+    padding: 20px 30px;
+    font-size: 14px;
+    font-weight: 300;
+}
+ol li{
+    margin-bottom: 10px;
+}
+
+
 /* FOOTER */
 
 footer{
-    position: absolute;
-    bottom: 0;
-    right: 0;
     opacity: 0.8;
     font-size: 12px;
+    text-align: right;
+    padding: 5px 25px;
+    margin-top: auto;
 }
 
 
@@ -186,9 +243,9 @@ footer{
 
 .recipes li:hover{
     opacity: 1;
-    color: rgb(84, 158, 228);
+    color: var(--accent_color);
 }
 
 a:hover > .menu_icon{
-    fill: rgb(84, 158, 228)
+    fill: var(--accent_color);
 }
